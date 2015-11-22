@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="C:\Users\Angad\software\Work\Projects\Resume\styles\style.css" type="text/css" >
+<link rel="stylesheet" href="./styles/style.css" type="text/css" >
 <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>-->
 <link href='https://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
 <!--<link href='https://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<meta name="viewport" content="width=device-width" />
+
 </head>
 <body>
     <header>
     </header>
+  <script>
+$(function(){
+
+  $("#clicked").click(function(){
+
+
+  $(this).toggleClass("noborder");
+    $( "#pls" ).slideToggle( "slow", function() {
+     // Animation complete.
+      });
+
+  })
+})
+
+
+  </script>
+<div class="navbar center fixed" id="clicked">
+<div  class="links">
+        <a href="#" >ABOUT</a>
+        <a href="#" >WORK EXPERIENCE</a>
+        <a href="#" >EDUCATION</a>
+        <a href="#" >SKILLS</a>
+        <a href="#" >MISC</a>
+</div>
+</div>
+<div id ="pls" style="height:400px;background-color:#188700;width:100%;display:none;border-bottom:4px solid #188791;position:fixed;z-index0.5;">
+</div>
 
     <div class=container>
-      <div class="circualrPhoto center"></div>
+
+      <div class="circualrPhoto center shadow"></div>
         <section>
         <div><h1><span>Angad Singh</span></h1>
           <div class="paragraph">
@@ -25,17 +57,43 @@
           </div>
           </section>
           <section>
+          <div><h1><span>WORK EXPERIENCE</span></h1></div>
+          <div class="small-container center">
+            <!--University and degree start-->
+            <div class="row">
+            <div class="col-lg">
+
+  <img src="./images/ibm_logo.gif" alt="IBM"></img>
+          </div><div class="col-lg">
+            <div class="bold">
+              Software Innovator
+            </div>
+            <div class="project-work paragraph">
+            <p>  Designed and developed a Performance Analysis tool that shows how IBM DB2 performs on various data workloads. The tool is used by marketing
+              to show cutomers the speed ups that they can achieve on their workloads using IBM DB2</p>
+            </div>
+              <div class="project-work paragraph">
+                <p>Worked on a tool that generates SQL queries which are used to perform Quality Assurance tests on IBM DB2 and its various components</p>
+              </div>
+
+            </div>
+
+          </section>
+          <section>
           <div><h1><span>Education</span></h1></div>
           <div class="small-container center">
             <!--University and degree start-->
             <div class="row">
             <div class="col-lg">
-              <div class="bold">
+  <img src="./images/umanlogotight.jpg" alt="University of Manitoba"></img>
+
+
+              <!--<div class="bold">
               University of Manitoba
               </div>
               <div>
               2014-Present
-              </div>
+            </div>-->
             </div><div class="col-lg">
               <div class="bold">
               Masters of Computer Science
@@ -46,12 +104,13 @@
             <!--University and degree start-->
             <div class="row">
             <div class="col-lg">
-              <div class="bold">
-              GGSIPU
+              <img src="./images/logo.jpg" alt="GGSIPU"></img>
+              <!--<div class="bold">
+                GGSIPU
               </div>
               <div>
               2010-2014
-              </div>
+            </div>-->
             </div><div class="col-lg">
               <div class="bold">
               Bachelors of Technology - Computer Science & Engineering
@@ -60,8 +119,8 @@
             </div>
             <!--University and degree end-->
           </div>
-          </section> 
-          <section>
+          </section>
+  <section>
            <div><h1><span>Skills</span></h1></div>
           <div class="small-container center">
           <!--techologies row-->
@@ -89,18 +148,18 @@
                <li>C,C++</li>
                <li>Docker</li>
                <li>Spark</li>
-               
+
              </ul>
 
            </div>
-          </div>
+         </div>-->
           <!--techologies row-->
           </div>
-          </section>
-
+        </section>
 
         </div>
-    </div>
+        </div>
+
 
     <footer>
     </footer>
