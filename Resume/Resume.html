@@ -2,47 +2,15 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" href="./styles/style.css" type="text/css" >
-<!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>-->
-<link href='https://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
-<!--<link href='https://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>-->
+<link rel="stylesheet" href="./styles/bootstrap-3.3.5-dist/bootstrap-3.3.5-dist/css/bootstrap.min.css" type="text/css" >
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <meta name="viewport" content="width=device-width" />
 
 </head>
 <body>
-    <header>
-    </header>
-  <script>
-$(function(){
-
-  $("#clicked").click(function(){
-
-
-  $(this).toggleClass("noborder");
-    $( "#pls" ).slideToggle( "slow", function() {
-     // Animation complete.
-      });
-
-  })
-})
-
-
-  </script>
-<div class="navbar center fixed" id="clicked">
-<div  class="links">
-        <a href="#" >ABOUT</a>
-        <a href="#" >WORK EXPERIENCE</a>
-        <a href="#" >EDUCATION</a>
-        <a href="#" >SKILLS</a>
-        <a href="#" >MISC</a>
-</div>
-</div>
-<div id ="pls" style="height:400px;background-color:#188700;width:100%;display:none;border-bottom:4px solid #188791;position:fixed;z-index0.5;">
-</div>
-
     <div class=container>
-
       <div class="circualrPhoto center shadow"></div>
         <section>
         <div><h1><span>Angad Singh</span></h1>
@@ -61,10 +29,10 @@ $(function(){
           <div class="small-container center">
             <!--University and degree start-->
             <div class="row">
-            <div class="col-lg">
+            <div class="col-sm-6 col-md-6">
 
   <img src="./images/ibm_logo.gif" alt="IBM"></img>
-          </div><div class="col-lg">
+</div><div class="min col-sm-6 col-md-6">
             <div class="bold">
               Software Innovator
             </div>
@@ -84,7 +52,7 @@ $(function(){
           <div class="small-container center">
             <!--University and degree start-->
             <div class="row">
-            <div class="col-lg">
+            <div class="col-sm-6 col-md-6">
   <img src="./images/umanlogotight.jpg" alt="University of Manitoba"></img>
 
 
@@ -94,7 +62,7 @@ $(function(){
               <div>
               2014-Present
             </div>-->
-            </div><div class="col-lg">
+            </div><div class="col-sm-6 col-md-6">
               <div class="bold">
               Masters of Computer Science
               </div>
@@ -103,7 +71,7 @@ $(function(){
             <!--University and degree end-->
             <!--University and degree start-->
             <div class="row">
-            <div class="col-lg">
+            <div class="col-sm-6 col-md-6">
               <img src="./images/logo.jpg" alt="GGSIPU"></img>
               <!--<div class="bold">
                 GGSIPU
@@ -111,7 +79,7 @@ $(function(){
               <div>
               2010-2014
             </div>-->
-            </div><div class="col-lg">
+            </div><div class="col-sm-6 col-md-6">
               <div class="bold">
               Bachelors of Technology - Computer Science & Engineering
               </div>
@@ -122,11 +90,11 @@ $(function(){
           </section>
   <section>
            <div><h1><span>Skills</span></h1></div>
-          <div class="small-container center">
+
           <!--techologies row-->
           <div class="row">
-           <div class="col-sm bold">Technologies</div>
-           <div class="col-sm">
+           <div class="col-sm-4 col-md-4 bold">Technologies</div>
+           <div class="col-sm-4 col-md-4">
              <div class="bold">I am cool with...</div>
              <ul>
                <li>JavaScript</li>
@@ -142,7 +110,7 @@ $(function(){
              </ul>
 
            </div>
-           <div class="col-sm">
+           <div class="col-sm-4 col-md-4">
              <div class="bold">What I know</div>
              <ul>
                <li>C,C++</li>
@@ -152,9 +120,9 @@ $(function(){
              </ul>
 
            </div>
-         </div>-->
+         </div>
           <!--techologies row-->
-          </div>
+
         </section>
 
         </div>
