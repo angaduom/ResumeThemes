@@ -1,136 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<link rel="stylesheet" href="./styles/style.css" type="text/css" >
-<link rel="stylesheet" href="./styles/bootstrap-3.3.5-dist/bootstrap-3.3.5-dist/css/bootstrap.min.css" type="text/css" >
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-<meta name="viewport" content="width=device-width" />
+<head>
+  <link rel="stylesheet" href="./styles/style.css" type="text/css">
+  <link rel="stylesheet" href="./styles/bootstrap-3.3.5-dist/bootstrap-3.3.5-dist/css/bootstrap.min.css" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width" />
 
 </head>
+
 <body>
-    <div class=container>
-      <div class="circualrPhoto center shadow"></div>
-        <section>
-        <div><h1><span>Angad Singh</span></h1>
-          <div class="paragraph">
-            <p>I am a Software Developer in the beautiful city of Toronto. I currently am working at IBM as software developer intern.
-              I love to make applications that make a difference in the day to day lives of people, I believe that programmers can make
-              this world a better place. I love travelling, seeing new places and doing something new. Firmly believe in learning new things all the
-              time, and remaing happy no matter where I am.
+  <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        console.log("clicked");
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: (target.offset().top - 100)
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  <!--Navigation bar from bootstrap heavily modified-->
+  <nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
-            </p>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#About">About</a></li>
+          <li><a href="#Experience">Work Experience</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Navigation bar from bootstrap heavily modified-->
+
+
+
+  <div class=container>
+    <div class="circualrPhoto center shadow"></div>
+    <section id="About">
+      <div>
+        <h1>
+          <span>Angad Singh</span>
+        </h1>
+        <div class="paragraph center">
+          <p> I am a Software Developer in the beautiful city of Toronto. I currently am working at IBM as software developer intern. I love to make applications that make a difference in the day to day lives of people, I believe that programmers can make
+            this world a better place. I love travelling, seeing new places and doing something new. Firmly believe in learning new things all the time, and remaing happy no matter where I am.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="Experience">
+      <div>
+        <h1>
+          <span>WORK EXPERIENCE</span>
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 col-md-2"></div>
+        <div class="col-sm-4 col-md-4">
+          <img src="./images/ibm_logo.gif" alt="IBM"></img>
+        </div>
+        <div class="min col-sm-4 col-md-4">
+          <div class="bold">
+            Software Innovator
           </div>
+          <div class="project-work paragraph">
+            <p> Designed and developed a Performance Analysis tool that shows how IBM DB2 performs on various data workloads. The tool is used by marketing to show cutomers the speed ups that they can achieve on their workloads using IBM DB2</p>
           </div>
-          </section>
-          <section>
-          <div><h1><span>WORK EXPERIENCE</span></h1></div>
-          <div class="small-container center">
-            <!--University and degree start-->
-            <div class="row">
-            <div class="col-sm-6 col-md-6">
-
-  <img src="./images/ibm_logo.gif" alt="IBM"></img>
-</div><div class="min col-sm-6 col-md-6">
-            <div class="bold">
-              Software Innovator
-            </div>
-            <div class="project-work paragraph">
-            <p>  Designed and developed a Performance Analysis tool that shows how IBM DB2 performs on various data workloads. The tool is used by marketing
-              to show cutomers the speed ups that they can achieve on their workloads using IBM DB2</p>
-            </div>
-              <div class="project-work paragraph">
-                <p>Worked on a tool that generates SQL queries which are used to perform Quality Assurance tests on IBM DB2 and its various components</p>
-              </div>
-
-            </div>
-
-          </section>
-          <section>
-          <div><h1><span>Education</span></h1></div>
-          <div class="small-container center">
-            <!--University and degree start-->
-            <div class="row">
-            <div class="col-sm-6 col-md-6">
-  <img src="./images/umanlogotight.jpg" alt="University of Manitoba"></img>
-
-
-              <!--<div class="bold">
+          <div class="project-work paragraph">
+            <p>Worked on a tool that generates SQL queries which are used to perform Quality Assurance tests on IBM DB2 and its various components</p>
+          </div>
+        </div>
+        <div class="col-sm-2 col-md-2"></div>
+      </div>
+    </section>
+    <section id="Education">
+      <div>
+        <h1>
+          <span>Education</span>
+        </h1>
+      </div>
+      <!--University and degree start-->
+      <div class="row">
+        <div class="col-sm-2 col-md-2"></div>
+        <div class="col-sm-4 col-md-4">
+          <img src="./images/umanlogotight.jpg" alt="University of Manitoba"></img>
+          <!--<div class="bold">
               University of Manitoba
               </div>
               <div>
               2014-Present
             </div>-->
-            </div><div class="col-sm-6 col-md-6">
-              <div class="bold">
-              Masters of Computer Science
-              </div>
-            </div>
-            </div>
-            <!--University and degree end-->
-            <!--University and degree start-->
-            <div class="row">
-            <div class="col-sm-6 col-md-6">
-              <img src="./images/logo.jpg" alt="GGSIPU"></img>
-              <!--<div class="bold">
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <div class="bold">
+            Masters of Computer Science
+          </div>
+          <div>
+            2014-Present
+          </div>
+        </div>
+        <div class="col-sm-2 col-md-2"></div>
+
+      </div>
+      <!--University and degree end-->
+      <!--University and degree start-->
+      <div class="row">
+        <div class="col-sm-2 col-md-2"></div>
+        <div class="col-sm-4 col-md-4">
+          <img src="./images/logo.jpg" alt="GGSIPU"></img>
+          <!--<div class="bold">
                 GGSIPU
               </div>
               <div>
               2010-2014
             </div>-->
-            </div><div class="col-sm-6 col-md-6">
-              <div class="bold">
-              Bachelors of Technology - Computer Science & Engineering
-              </div>
-            </div>
-            </div>
-            <!--University and degree end-->
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <div class="bold">
+            Bachelors of Technology - Computer Science & Engineering
           </div>
-          </section>
-  <section>
-           <div><h1><span>Skills</span></h1></div>
-
-          <!--techologies row-->
-          <div class="row">
-           <div class="col-sm-4 col-md-4 bold">Technologies</div>
-           <div class="col-sm-4 col-md-4">
-             <div class="bold">I am cool with...</div>
-             <ul>
-               <li>JavaScript</li>
-               <li>NodeJS</li>
-               <li>ReactJS</li>
-               <li>CSS3</li>
-               <li>HTML5</li>
-               <li>JQuery</li>
-               <li>Java</li>
-               <li>JSP</li>
-               <li>Shell Scripting</li>
-               <li>SQL</li>
-             </ul>
-
-           </div>
-           <div class="col-sm-4 col-md-4">
-             <div class="bold">What I know</div>
-             <ul>
-               <li>C,C++</li>
-               <li>Docker</li>
-               <li>Spark</li>
-
-             </ul>
-
-           </div>
-         </div>
-          <!--techologies row-->
-
-        </section>
+        </div>
+        <div class="col-sm-2 col-md-2"></div>
+      </div>
+      <!--University and degree end-->
+    </section>
+    <section id="Skills">
+      <div>
+        <h1>
+          <span>Skills</span>
+        </h1>
+      </div>
+      <!--techologies row-->
+      <div class="row">
+        <div class="col-sm-4 col-md-4 bold">Web Development</div>
+        <div class="col-sm-4 col-md-4">
+          <div class="bold">I am cool with...</div>
+          <ul class="ul">
+            <li>NodeJS</li>
+            <li>ReactJS</li>
+            <li>CSS3</li>
+            <li>HTML5</li>
+            <li>JQuery</li>
+            <li>JSP</li>
+            <li>JavaScript</li>
+            <li>JSON</li>
+            <li>Ajax</li>
+            <li>Socket.io</li>
+          </ul>
 
         </div>
+        <div class="col-sm-4 col-md-4">
+          <div class="bold">What I know</div>
+          <ul class="ul">
+            <li>Docker</li>
+            <li>Spark</li>
+          </ul>
+
         </div>
+      </div>
+      <!--techologies row-->
+      <!--techologies row-->
+      <div class="row">
+        <div class="col-sm-4 col-md-4 bold">Languages</div>
+        <div class="col-sm-4 col-md-4">
+          <div class="bold">I am cool with...</div>
+          <ul class="ul">
+            <li>Java</li>
+            <li>Shell Scripting</li>
+            <li>SQL</li>
+          </ul>
+
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <div class="bold">What I know</div>
+          <ul class="ul">
+            <li>C++</li>
+            <li>C</li>
+            <li>python</li>
+            <li>Scala</li>
+          </ul>
+        </div>
+      </div>
+      <!--techologies row-->
+      <!--techologies row-->
+      <div class="row">
+        <div class="col-sm-4 col-md-4 bold">Databases</div>
+        <div class="col-sm-4 col-md-4">
+          <div class="bold">I am cool with...</div>
+          <ul class="ul">
+            <li>DB2</li>
+            <li>MySQl</li>
+            <li>Ms SQL SERVER</li>
+          </ul>
+
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <div class="bold">What I know</div>
+          <ul class="ul">
+            <li>MongoDB</li>
+          </ul>
+        </div>
+      </div>
+      <!--techologies row-->
+      <!--techologies row-->
+      <div class="row">
+        <div class="col-sm-4 col-md-4 bold">IDEs</div>
+        <div class="col-sm-4 col-md-4">
+          <div class="bold">I am cool with...</div>
+          <ul class="ul">
+            <li>Andriod Studio</li>
+            <li>Eclipse</li>
+            <li>Atom</li>
+            <li>NetBeans</li>
+            <li>WebStorm</li>
+            <li>IntelliJ</li>
+          </ul>
+
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <div class="bold">What I know</div>
+          <ul class="ul">
+            <li>Visual Studio</li>
+          </ul>
+        </div>
+      </div>
+      <!--techologies row-->
+      <!--techologies row-->
+      <div class="row">
+        <div class="col-sm-4 col-md-4 bold">Operating Systems</div>
+        <div class="col-sm-4 col-md-4">
+          <div class="bold">I am cool with...</div>
+          <ul class="ul">
+            <li>AIX</li>
+            <li>Linux</li>
+            <li>Windows</li>
+          </ul>
+        </div>
+        <div class="col-sm-4 col-md-4">
+        </div>
+      </div>
+      <!--techologies row-->
+    </section>
 
 
-    <footer>
-    </footer>
+
+  <section id="Contact" class="footer">
+    <div class="flex-container">
+      <div class="col-sm-3 col-md-3 items min"><a href="https://twitter.com/angaduom"  class="fa fa-twitter fa-2x"></a></div>
+      <div class="col-sm-3 col-md-3 items min"><a href="https://www.linkedin.com/in/angad-singh-20459880" style="text-decoration:none;" class="fa fa-linkedin fa-2x"></a></div>
+      <div class="col-sm-3 col-md-3 items min"><a href="" style="text-decoration:none;" class="fa fa-envelope fa-2x"></a></div>
+    </div>
+  </section>
+</div>
 
 </body>
+
 </html>
