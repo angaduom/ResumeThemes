@@ -16,7 +16,6 @@
   <script>
     $(function() {
       $('a[href*=#]:not([href=#])').click(function() {
-        console.log("clicked");
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -28,8 +27,21 @@
           }
         }
       });
+      console.log("ready");
+      $("#myNavbar").on("click", "", function() {
+        console.log("here");
+        $("#myNavbar").collapse('hide');
+      })
+
     });
+
+
+    function hide() {
+      console.log("what up");
+      $("#myNavbar").collapse('hide');
+    }
   </script>
+
   <!--Navigation bar from bootstrap heavily modified-->
   <nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
@@ -43,11 +55,11 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="#About">About</a></li>
-          <li><a href="#Experience">Work Experience</a></li>
-          <li><a href="#Education">Education</a></li>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#Contact">Contact</a></li>
+          <li><a href="#About" onclick="hide()">About</a></li>
+          <li><a href="#Experience" onclick="hide()">Work Experience</a></li>
+          <li><a href="#Education" onclick="hide()">Education</a></li>
+          <li><a href="#Skills" onclick="hide()">Skills</a></li>
+          <li><a href="#Contact" onclick="hide()">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -63,6 +75,8 @@
         <h1>
           <span>Angad Singh</span>
         </h1>
+      </div>
+      <div class="row">
         <div class="paragraph center">
           <p> I am a Software Developer in the beautiful city of Toronto. I currently am working at IBM as software developer intern. I love to make applications that make a difference in the day to day lives of people, I believe that programmers can make
             this world a better place. I love travelling, seeing new places and doing something new. Firmly believe in learning new things all the time, and remaing happy no matter where I am.
@@ -141,6 +155,9 @@
           <div class="bold">
             Bachelors of Technology - Computer Science & Engineering
           </div>
+          <div>
+            2010-2014
+          </div>
         </div>
         <div class="col-sm-2 col-md-2"></div>
       </div>
@@ -153,127 +170,171 @@
         </h1>
       </div>
       <!--techologies row-->
-      <div class="row">
-        <div class="col-sm-4 col-md-4 bold">Web Development</div>
-        <div class="col-sm-4 col-md-4">
-          <div class="bold">I am cool with...</div>
-          <ul class="ul">
-            <li>NodeJS</li>
-            <li>ReactJS</li>
-            <li>CSS3</li>
-            <li>HTML5</li>
-            <li>JQuery</li>
-            <li>JSP</li>
-            <li>JavaScript</li>
-            <li>JSON</li>
-            <li>Ajax</li>
-            <li>Socket.io</li>
-          </ul>
+      <div class="row underline">
+        <div class="col-sm-6 col-md-6">
+          <div class="underline bold">Web Development</div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 ">
+              <ul class="ul">
+                <li>NodeJS</li>
+                <li>ReactJS</li>
+                <li>CSS3</li>
+                <li>Bootstrap</li>
+                <li>HTML5</li>
+                <li>JQuery</li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-6 ">
+              <ul class="ul">
+                <li>JSP</li>
+                <li>JavaScript</li>
+                <li>JSON</li>
+                <li>Ajax</li>
+                <li>Socket.io</li>
 
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-4 col-md-4">
-          <div class="bold">What I know</div>
-          <ul class="ul">
-            <li>Docker</li>
-            <li>Spark</li>
-          </ul>
 
+        <div class="col-sm-6 col-md-6">
+          <div class="underline bold">Languages</div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 ">
+              <ul class="ul">
+                <li>Java</li>
+                <li>Bash Shell Scripting</li>
+                <li>Scala</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-6 ">
+              <ul class="ul">
+                <li>C++</li>
+                <li>C</li>
+                <li>python</li>
+              </ul>
+            </div>
+          </div>
         </div>
+
+
+
+
+
+
       </div>
       <!--techologies row-->
       <!--techologies row-->
-      <div class="row">
-        <div class="col-sm-4 col-md-4 bold">Languages</div>
-        <div class="col-sm-4 col-md-4">
-          <div class="bold">I am cool with...</div>
-          <ul class="ul">
-            <li>Java</li>
-            <li>Shell Scripting</li>
-            <li>SQL</li>
-          </ul>
+      <div class="row underline">
+        <div class="col-sm-6 col-md-6">
+          <div class="underline bold">Databases</div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 ">
+              <ul class="ul">
+                <li>DB2</li>
+                <li>MySQl</li>
 
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-6 ">
+              <ul class="ul">
+                <li>Ms SQL SERVER</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-4 col-md-4">
-          <div class="bold">What I know</div>
-          <ul class="ul">
-            <li>C++</li>
-            <li>C</li>
-            <li>python</li>
-            <li>Scala</li>
-          </ul>
-        </div>
-      </div>
-      <!--techologies row-->
-      <!--techologies row-->
-      <div class="row">
-        <div class="col-sm-4 col-md-4 bold">Databases</div>
-        <div class="col-sm-4 col-md-4">
-          <div class="bold">I am cool with...</div>
-          <ul class="ul">
-            <li>DB2</li>
-            <li>MySQl</li>
-            <li>Ms SQL SERVER</li>
-          </ul>
 
-        </div>
-        <div class="col-sm-4 col-md-4">
-          <div class="bold">What I know</div>
-          <ul class="ul">
-            <li>MongoDB</li>
-          </ul>
-        </div>
-      </div>
-      <!--techologies row-->
-      <!--techologies row-->
-      <div class="row">
-        <div class="col-sm-4 col-md-4 bold">IDEs</div>
-        <div class="col-sm-4 col-md-4">
-          <div class="bold">I am cool with...</div>
-          <ul class="ul">
-            <li>Andriod Studio</li>
-            <li>Eclipse</li>
-            <li>Atom</li>
-            <li>NetBeans</li>
-            <li>WebStorm</li>
-            <li>IntelliJ</li>
-          </ul>
 
+
+        <div class="col-sm-6 col-md-6">
+          <div class="underline bold">IDEs</div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 ">
+              <ul class="ul">
+                <li>Andriod Studio</li>
+                <li>Eclipse</li>
+                <li>Atom</li>
+                <li>NetBeans</li>
+
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-6 ">
+              <ul class="ul">
+                <li>WebStorm</li>
+                <li>IntelliJ</li>
+                <li>Visual Studio</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-4 col-md-4">
-          <div class="bold">What I know</div>
-          <ul class="ul">
-            <li>Visual Studio</li>
-          </ul>
-        </div>
+
       </div>
       <!--techologies row-->
       <!--techologies row-->
-      <div class="row">
-        <div class="col-sm-4 col-md-4 bold">Operating Systems</div>
-        <div class="col-sm-4 col-md-4">
-          <div class="bold">I am cool with...</div>
-          <ul class="ul">
-            <li>AIX</li>
-            <li>Linux</li>
-            <li>Windows</li>
-          </ul>
+      <div class="row underline">
+        <div class="col-sm-6 col-md-6">
+          <div class="underline bold">Operating Systems</div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 ">
+              <ul class="ul">
+                <li>AIX</li>
+                <li>Linux</li>
+
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-6 ">
+              <ul class="ul">
+                <li>Windows</li>
+                <li>Unix</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-4 col-md-4">
+
+
+        <div class="col-sm-6 col-md-6">
+          <div class="underline bold">Misc</div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 ">
+              <ul class="ul">
+                <li>Docker</li>
+                <li>Spark</li>
+                <li>GIT</li>
+                <li>IBM Data Studio</li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-6 ">
+              <ul class="ul">
+                <li>Amazon AWS</li>
+                <li>IBM Bluemix</li>
+                <li>MySQl Workbench</li>
+                <li>IBM Data Server Manager</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <!--techologies row-->
+
     </section>
-
-
-
-  <section id="Contact" class="footer">
-    <div class="flex-container">
-      <div class="col-sm-3 col-md-3 items min"><a href="https://twitter.com/angaduom"  class="fa fa-twitter fa-2x"></a></div>
-      <div class="col-sm-3 col-md-3 items min"><a href="https://www.linkedin.com/in/angad-singh-20459880" style="text-decoration:none;" class="fa fa-linkedin fa-2x"></a></div>
-      <div class="col-sm-3 col-md-3 items min"><a href="" style="text-decoration:none;" class="fa fa-envelope fa-2x"></a></div>
-    </div>
-  </section>
-</div>
+    <section id="Contact" class="footer">
+      <div class="row">
+        <div class="col-sm-3 col-md-3 text-align-center min">
+        </div>
+        <div class="col-sm-3 col-md-3 text-align-center min">
+          <div class="fa fa-twitter fa-2x"></div>
+          <a style="text-decoration:none;" href="www.twitter.com/angaduom">Twitter</a>
+        </div>
+        <div class="col-sm-3 col-md-3 text-align-center min">
+          <div class="fa fa-envelope fa-2x"></div> angaduom@gmail.com
+        </div>
+        <div class="col-sm-3 col-md-3 text-align-center min">
+        </div>
+      </div>
+    </section>
+  </div>
 
 </body>
 

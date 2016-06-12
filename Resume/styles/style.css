@@ -28,13 +28,13 @@ body {
   width: 100%;
   font-weight: bold;
   text-align: center;
-  background-color: #188890 !important;
-  border-bottom: 4px solid #188796;
+  background-color: #004E64 !important;
+  border-bottom: 4px solid #2CF6B3 !important;
   top: 0px;
   color: white !important;
 }
 .navbar a {
-  color: #ddd;
+  color:  !important;
   text-decoration: none;
   transition: all 1s;
   background-color: transparent !important;
@@ -88,17 +88,15 @@ h1 span {
   margin-bottom: 30px;
 }
 .paragraph {
-  max-width: 40vw;
+
   border-bottom: 1px solid #ddd;
-  margin-top: 20px;
 }
 p {
   text-align: justify;
 }
 .row {
   width: 100%;
-  margin-bottom: 5%;
-  border-bottom: 1px solid #ddd;
+  padding: 5%;
 }
 .min {
   min-width: 200px;
@@ -109,7 +107,8 @@ p {
 }
 .ul li {
   background-color: #cce5ff;
-  height: 35px;
+  min-height: 35px;
+  min-width:75px;
   list-style: none;
   max-width: 150px;
   margin-top: 5px;
@@ -125,11 +124,11 @@ img {
 .project-work {
   border-bottom: 1px dashed #ddd;
   padding-bottom: 5px;
-  margin-bottom: 15px;
   box-sizing: border-box;
 }
 section {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
+  min-height: 200px;
 }
 .cl-effect-11 a {
   padding: 10px 0 !important;
@@ -159,11 +158,19 @@ section {
   display: flex;
   justify-content: center;
 }
-.items
+.text-align-center
 {
   text-align: center;
 }
 a
 {
   text-decoration:none !important;
+}
+.underline
+{
+  border-bottom: 1px solid #ddd;
+}
+.center
+{
+  margin: auto;
 }
